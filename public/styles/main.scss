@@ -1,0 +1,28 @@
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+
+.logo {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  width: 6rem;
+  height: 6rem;
+  border: 1px solid black;
+  position: relative;
+
+  .jm {
+    position: absolute;
+    bottom:0;
+    right: 0;
+    font-size: 2rem;
+  }
+}
+
