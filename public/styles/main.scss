@@ -1,3 +1,7 @@
+$header-color: #d8275f;
+$logo-color: #fff;
+
+
 *:before,
 *:after {
   margin: 0;
@@ -8,19 +12,18 @@
 body {
   box-sizing: border-box;
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  margin: 0;
 }
 
-.page {
-  display: flex;
-  margin: 0 auto;
-  width: 1200px;
-  border: 1px solid black;
-}
+// .page {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
 
 
 
 
-header {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,11 +33,12 @@ header {
     margin-left: 1em;
   }
 
-  nav {
+  .menu {
     margin-right: 2em;
     a {
       text-decoration: none;
       display: inline-block;
+      color: black;
   
       margin-left: 3em;
     }
@@ -42,22 +46,48 @@ header {
   
 }
 
+header {
+  height: 400px;
+  margin-top: 1em;
+  width: 100%;
+  background-color: $header-color;
+  color: $logo-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 
-
-
-.logo {
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  width: 6rem;
-  height: 6rem;
-  border: 1px solid black;
-  position: relative;
-
-  .jm {
-    position: absolute;
-    bottom:0;
-    right: 0;
-    font-size: 2rem;
+  .logo {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid $logo-color;
+    position: relative;
+  
+    .jm {
+      position: absolute;
+      bottom:0;
+      right: 0;
+      font-size: 2rem;
+    }
   }
+
+  .header-text {
+    margin-top: 1em;
+    text-align: center;
+  }
+
+  
 }
+
+
+
+
+
+
+
+
+
+
 
