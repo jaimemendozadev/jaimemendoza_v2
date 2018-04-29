@@ -84,12 +84,54 @@ header {
 //languages frameworks db-orm misc-tools
 .skills {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+
+
+
+  h2 {
+    width: 100%;
+    text-align: center;
+  }
 
   ul {
     width: 20%;
     border: 1px solid black;
+
+    li {
+      list-style-type: none;
+      background-position: left center;
+      background-repeat: no-repeat;
+      padding-left: 20px; /* Adjust according to image size to push text across. */
+
+
+      
+    }
+
+    li[data-skill="JavaScript"] {
+      background-image: url('../images/logos/js-logo.svg');
+      
+    }
+
+    li[data-skill="HTML"] {
+      background-image: url('../images/logos/html-logo.svg');
+    }
+
+    li[data-skill="CSS"] {
+      background-image: url('../images/logos/css-logo.svg');
+      background-size: 20px 20px;
+    }
+
+    li[data-skill="Sass"] {
+      background-image: url('../images/logos/sass-logo.svg');
+    }
+
+
+
+
   }
+
+  
 
 }
 
