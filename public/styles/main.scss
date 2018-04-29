@@ -16,11 +16,15 @@ body {
 }
 
 
+
+
+
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+ 
 
   .title {
     margin-left: 1em;
@@ -38,6 +42,7 @@ nav {
   }
   
 }
+
 
 header {
   height: 400px;
@@ -69,20 +74,14 @@ header {
     margin-top: 1em;
     text-align: center;
   }
-
-  
 }
 
 
 .about-me {
-  margin-top: 200px;
+  margin-top: 150px;
   display: flex;
   justify-content: center;
   font-size: 1.5em;
-
-  .about-me-header {
-    
-  }
 
   .story {
     width: 50%;
@@ -100,7 +99,7 @@ header {
   justify-content: space-around;
   font-size: 2em;
 
-  margin-top: 200px;
+  margin-top: 150px;
 
 
 
@@ -123,7 +122,6 @@ header {
 
     li[data-skill="JavaScript"] {
       background-image: url('../images/logos/js-logo.svg');
-      
     }
 
     li[data-skill="HTML"] {
@@ -176,9 +174,41 @@ header {
 }
 
 
+@media only screen and (max-width: 450px) {
+  .page {
+    display: flex;
+    flex-direction: column;
+
+  }
 
 
+  header {
+    order: 1;
+    margin: 0;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+
+    .domain-header {
+      display: none;
+    }
+
+  }
+
+  .about-me {
+    order: 3;
+  }
 
 
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 4;
+  }
 
 
+}
