@@ -1,3 +1,8 @@
+/**************
+* Base Styling
+***************/
+
+
 $header-color: #d8275f;
 $logo-color: #fff;
 
@@ -13,6 +18,55 @@ body {
   box-sizing: border-box;
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   margin: 0;
+}
+
+li[data-skill="JavaScript"] {
+  background-image: url('../images/logos/js-logo.svg');
+}
+
+li[data-skill="HTML"] {
+  background-image: url('../images/logos/html-logo.svg');
+}
+
+li[data-skill="CSS"] {
+  background-image: url('../images/logos/css-logo.svg');
+  background-size: 20px 20px;
+}
+
+li[data-skill="Sass"] {
+  background-image: url('../images/logos/sass-logo.svg');
+}
+
+li[data-skill="React"] {
+  background-image: url('../images/logos/react-logo.svg');
+}
+
+li[data-skill="React Native"] {
+  background-image: url('../images/logos/react-logo.svg');
+}
+
+li[data-skill="Redux"] {
+  background-image: url('../images/logos/redux-logo.svg');
+}
+
+li[data-skill="Node"] {
+  background-image: url('../images/logos/nodejs-logo.svg');
+  background-size: 20px 20px;
+}
+
+li[data-skill="Bootstrap"] {
+  background-image: url('../images/logos/bootstrap-logo.svg');
+  background-size: 20px 20px;
+}
+
+li[data-skill="Bootstrap"] {
+  background-image: url('../images/logos/bootstrap-logo.svg');
+  background-size: 20px 20px;
+}
+
+li[data-skill="jQuery"] {
+  background-image: url('../images/logos/jQuery-logo.svg');
+  background-size: 40px 20px;
 }
 
 
@@ -102,7 +156,6 @@ header {
   margin-top: 150px;
 
 
-
   h2 {
     width: 100%;
     text-align: center;
@@ -119,60 +172,15 @@ header {
       padding-left: 40px; /* Adjust according to image size to push text across. */
       
     }
-
-    li[data-skill="JavaScript"] {
-      background-image: url('../images/logos/js-logo.svg');
-    }
-
-    li[data-skill="HTML"] {
-      background-image: url('../images/logos/html-logo.svg');
-    }
-
-    li[data-skill="CSS"] {
-      background-image: url('../images/logos/css-logo.svg');
-      background-size: 20px 20px;
-    }
-
-    li[data-skill="Sass"] {
-      background-image: url('../images/logos/sass-logo.svg');
-    }
-
-    li[data-skill="React"] {
-      background-image: url('../images/logos/react-logo.svg');
-    }
-
-    li[data-skill="React Native"] {
-      background-image: url('../images/logos/react-logo.svg');
-    }
-
-    li[data-skill="Redux"] {
-      background-image: url('../images/logos/redux-logo.svg');
-    }
-
-    li[data-skill="Node"] {
-      background-image: url('../images/logos/nodejs-logo.svg');
-      background-size: 20px 20px;
-    }
-
-    li[data-skill="Bootstrap"] {
-      background-image: url('../images/logos/bootstrap-logo.svg');
-      background-size: 20px 20px;
-    }
-
-    li[data-skill="Bootstrap"] {
-      background-image: url('../images/logos/bootstrap-logo.svg');
-      background-size: 20px 20px;
-    }
-
-    li[data-skill="jQuery"] {
-      background-image: url('../images/logos/jQuery-logo.svg');
-      background-size: 40px 20px;
-    }
-
   }
 
 }
 
+
+
+/**************
+* Mobile Layout
+***************/
 
 @media only screen and (max-width: 450px) {
   .page {
@@ -180,7 +188,6 @@ header {
     flex-direction: column;
 
   }
-
 
   header {
     order: 1;
@@ -209,6 +216,5 @@ header {
     align-items: center;
     order: 4;
   }
-
 
 }
