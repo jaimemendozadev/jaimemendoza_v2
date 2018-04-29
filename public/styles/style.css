@@ -52,7 +52,8 @@ header {
 .skills {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  font-size: 2em; }
   .skills h2 {
     width: 100%;
     text-align: center; }
@@ -63,7 +64,7 @@ header {
       list-style-type: none;
       background-position: left center;
       background-repeat: no-repeat;
-      padding-left: 20px;
+      padding-left: 40px;
       /* Adjust according to image size to push text across. */ }
     .skills ul li[data-skill="JavaScript"] {
       background-image: url("../images/logos/js-logo.svg"); }
@@ -74,3 +75,40 @@ header {
       background-size: 20px 20px; }
     .skills ul li[data-skill="Sass"] {
       background-image: url("../images/logos/sass-logo.svg"); }
+    .skills ul li[data-skill="React"] {
+      background-image: url("../images/logos/react-logo.svg"); }
+    .skills ul li[data-skill="React Native"] {
+      background-image: url("../images/logos/react-logo.svg"); }
+    .skills ul li[data-skill="Redux"] {
+      background-image: url("../images/logos/redux-logo.svg"); }
+    .skills ul li[data-skill="Node"] {
+      background-image: url("../images/logos/nodejs-logo.svg");
+      background-size: 20px 20px; }
+    .skills ul li[data-skill="Bootstrap"] {
+      background-image: url("../images/logos/bootstrap-logo.svg");
+      background-size: 20px 20px; }
+    .skills ul li[data-skill="Bootstrap"] {
+      background-image: url("../images/logos/bootstrap-logo.svg");
+      background-size: 20px 20px; }
+    .skills ul li[data-skill="jQuery"] {
+      background-image: url("../images/logos/jQuery-logo.svg");
+      background-size: 40px 20px; }
+
+/*
+
+
+li[data-skill=""] {
+      background-image: url('../images/logos/-logo.svg');
+    }
+
+<ul class="frameworks">
+        <li data-skill="React">React</li>
+        <li data-skill="React Native">React Native</li>
+        <li data-skill="Redux">Redux</li>
+        <li data-skill="Node">Node.js</li>
+        <li data-skill="Bootstrap">Bootstrap</li>
+        <li data-skill="Express">Express.js</li>
+        <li data-skill="jQuery">jQuery</li>
+      </ul>
+
+*/
