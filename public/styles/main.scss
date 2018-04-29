@@ -15,13 +15,6 @@ body {
   margin: 0;
 }
 
-// .page {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
-
-
-
 
 nav {
   display: flex;
@@ -68,7 +61,7 @@ header {
       position: absolute;
       bottom:0;
       right: 0;
-      font-size: 2rem;
+      font-size: 2em;
     }
   }
 
@@ -80,12 +73,34 @@ header {
   
 }
 
+
+.about-me {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+
+  .about-me-header {
+    
+  }
+
+  .story {
+    width: 50%;
+    margin-left: 3em;
+  }
+}
+
+
+
+
 //languages frameworks db-orm misc-tools
 .skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   font-size: 2em;
+
+  margin-top: 200px;
 
 
 
@@ -103,9 +118,6 @@ header {
       background-position: left center;
       background-repeat: no-repeat;
       padding-left: 40px; /* Adjust according to image size to push text across. */
-      
-
-
       
     }
 
@@ -159,40 +171,9 @@ header {
       background-size: 40px 20px;
     }
 
-
-
-   
-
-
-
-
   }
 
-  
-
 }
-
-
-
-
-/*
-
-
-li[data-skill=""] {
-      background-image: url('../images/logos/-logo.svg');
-    }
-
-<ul class="frameworks">
-        <li data-skill="React">React</li>
-        <li data-skill="React Native">React Native</li>
-        <li data-skill="Redux">Redux</li>
-        <li data-skill="Node">Node.js</li>
-        <li data-skill="Bootstrap">Bootstrap</li>
-        <li data-skill="Express">Express.js</li>
-        <li data-skill="jQuery">jQuery</li>
-      </ul>
-
-*/
 
 
 
