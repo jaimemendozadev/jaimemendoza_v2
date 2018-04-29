@@ -10,6 +10,41 @@ body {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
+.page {
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+  border: 1px solid black;
+}
+
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .title {
+    margin-left: 1em;
+  }
+
+  nav {
+    margin-right: 2em;
+    a {
+      text-decoration: none;
+      display: inline-block;
+  
+      margin-left: 3em;
+    }
+  }
+  
+}
+
+
+
+
 
 .logo {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
