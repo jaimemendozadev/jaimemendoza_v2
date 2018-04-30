@@ -1,128 +1,4 @@
 /******************************************
-* Base Styling
-*******************************************/
-*:before,
-*:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-body {
-  box-sizing: border-box;
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  margin: 0; }
-
-/*******************************************/
-/*
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
- 
-
-  .title {
-    margin-left: 1em;
-  }
-
-  .menu {
-    //margin-right: 2em;
-    a {
-      //text-decoration: none;
-      display: inline-block;
-      color: black;
-
-      margin: 0 1em;
-  
-      //margin-left: 3em;
-    }
-  }
-  
-}
-*/
-header {
-  height: 400px;
-  margin-top: 1em;
-  width: 100%;
-  background-color: #d8275f;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  header .logo {
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    width: 6rem;
-    height: 6rem;
-    border: 1px solid #fff;
-    position: relative; }
-    header .logo .jm {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      font-size: 2em; }
-  header .header-text {
-    margin-top: 1em;
-    text-align: center; }
-
-.about-me {
-  margin-top: 6em; }
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  font-size: 1.5em;
-  margin-top: 1em; }
-  .skills h2 {
-    width: 100%;
-    text-align: center; }
-  .skills ul {
-    border: 1px solid black; }
-    .skills ul li {
-      list-style-type: none;
-      background-position: left center;
-      background-repeat: no-repeat;
-      margin: 1em 0; }
-
-/******************************************
-* Mobile Layout
-*******************************************/
-@media only screen and (max-width: 450px) {
-  .page {
-    display: flex;
-    flex-direction: column; }
-  header {
-    order: 1;
-    margin: 0; }
-  nav {
-    order: 2;
-    font-size: 1.5em;
-    display: flex;
-    justify-content: center; }
-    nav .domain-header {
-      display: none; }
-    nav .menu {
-      margin-top: 2em; }
-      nav .menu a {
-        display: inline-block;
-        color: black;
-        margin-right: 1em; }
-  .about-me {
-    order: 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.5em; }
-    .about-me .story {
-      margin: 0 1.5em; }
-  .skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    order: 4; } }
-
-/******************************************
 * Icon Styling
 *******************************************/
 /* Adjust according to icon size to push text across. */
@@ -216,3 +92,127 @@ li[data-skill="Heroku"] {
   background-size: 30px 30px;
   padding-left: 2em;
   background-position: left center; }
+
+/******************************************
+* Base Styling
+*******************************************/
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  margin: 0; }
+
+/*******************************************/
+/*
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+
+  .title {
+    margin-left: 1em;
+  }
+
+  .menu {
+    //margin-right: 2em;
+    a {
+      //text-decoration: none;
+      display: inline-block;
+      color: black;
+
+      margin: 0 1em;
+  
+      //margin-left: 3em;
+    }
+  }
+  
+}
+*/
+header {
+  height: 400px;
+  margin-top: 1em;
+  width: 100%;
+  background-color: #d8275f;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  header .logo {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid #fff;
+    position: relative; }
+    header .logo .jm {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 2em; }
+  header .header-text {
+    margin-top: 1em;
+    text-align: center; }
+
+.about-me {
+  margin-top: 6em; }
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 1.5em;
+  margin-top: 1em; }
+  .skills h2 {
+    width: 100%;
+    text-align: center; }
+  .skills ul {
+    border: 1px solid black; }
+    .skills ul li {
+      list-style-type: none;
+      background-position: left center;
+      background-repeat: no-repeat;
+      margin: 1em 0; }
+
+/******************************************
+* Mobile Layout
+*******************************************/
+@media only screen and (max-width: 400px) {
+  .page {
+    display: flex;
+    flex-direction: column; }
+  header {
+    order: 1;
+    margin: 0; }
+  nav {
+    order: 2;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center; }
+    nav .domain-header {
+      display: none; }
+    nav .menu {
+      margin-top: 2em; }
+      nav .menu a {
+        display: inline-block;
+        color: black;
+        margin-right: 1em; }
+  .about-me {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em; }
+    .about-me .story {
+      margin: 0 1.5em; }
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    order: 4; } }
