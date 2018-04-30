@@ -13,20 +13,33 @@ body {
   margin: 0; }
 
 /*******************************************/
+/*
+
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
-  nav .title {
-    margin-left: 1em; }
-  nav .menu {
-    margin-right: 2em; }
-    nav .menu a {
-      text-decoration: none;
+  align-items: center;
+ 
+
+  .title {
+    margin-left: 1em;
+  }
+
+  .menu {
+    //margin-right: 2em;
+    a {
+      //text-decoration: none;
       display: inline-block;
       color: black;
-      margin-left: 3em; }
 
+      margin: 0 1em;
+  
+      //margin-left: 3em;
+    }
+  }
+  
+}
+*/
 header {
   height: 400px;
   margin-top: 1em;
@@ -83,13 +96,18 @@ header {
     order: 1;
     margin: 0; }
   nav {
+    order: 2;
+    font-size: 1.5em;
     display: flex;
-    flex-direction: column;
-    order: 2; }
+    justify-content: center; }
     nav .domain-header {
       display: none; }
     nav .menu {
       margin-top: 2em; }
+      nav .menu a {
+        display: inline-block;
+        color: black;
+        margin-right: 1em; }
   .about-me {
     order: 3;
     display: flex;
