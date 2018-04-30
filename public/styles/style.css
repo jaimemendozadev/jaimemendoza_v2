@@ -175,6 +175,9 @@ nav {
       background-repeat: no-repeat;
       margin: 1em 0; }
 
+.projects a {
+  color: black; }
+
 /******************************************
 * Mobile Layout
 *******************************************/
