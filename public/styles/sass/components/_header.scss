@@ -1,0 +1,31 @@
+header {
+  height: 400px;
+  margin-top: 1em;
+  width: 100%;
+  background-color: $header-color;
+  color: $logo-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    font-family: $font-family;
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid $logo-color;
+    position: relative;
+  
+    .jm {
+      position: absolute;
+      bottom:0;
+      right: 0;
+      font-size: 2em;
+    }
+  }
+
+  .header-text {
+    margin-top: 1em;
+    text-align: center;
+  }
+}

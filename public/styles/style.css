@@ -93,6 +93,31 @@ li[data-skill="Heroku"] {
   padding-left: 2em;
   background-position: left center; }
 
+header {
+  height: 400px;
+  margin-top: 1em;
+  width: 100%;
+  background-color: #d8275f;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  header .logo {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid #fff;
+    position: relative; }
+    header .logo .jm {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 2em; }
+  header .header-text {
+    margin-top: 1em;
+    text-align: center; }
+
 /******************************************
 * Base Styling
 *******************************************/
@@ -135,34 +160,6 @@ nav {
   
 }
 */
-header {
-  height: 400px;
-  margin-top: 1em;
-  width: 100%;
-  background-color: #d8275f;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  header .logo {
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    width: 6rem;
-    height: 6rem;
-    border: 1px solid #fff;
-    position: relative; }
-    header .logo .jm {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      font-size: 2em; }
-  header .header-text {
-    margin-top: 1em;
-    text-align: center; }
-
-.about-me {
-  margin-top: 6em; }
-
 .skills {
   display: flex;
   flex-wrap: wrap;
