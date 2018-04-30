@@ -118,20 +118,6 @@ header {
     margin-top: 1em;
     text-align: center; }
 
-/******************************************
-* Base Styling
-*******************************************/
-*:before,
-*:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-body {
-  box-sizing: border-box;
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  margin: 0; }
-
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -153,7 +139,20 @@ body {
 .projects a {
   color: black; }
 
-/*******************************************/
+/******************************************
+* Base Styling
+*******************************************/
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  margin: 0; }
+
 /******************************************
 * Mobile Layout
 *******************************************/
@@ -185,7 +184,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.5em; }
+    font-size: 1.2em; }
     .about-me .story {
       margin: 0 1.5em; }
   .skills {

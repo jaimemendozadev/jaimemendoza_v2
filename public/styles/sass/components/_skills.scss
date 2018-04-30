@@ -1,0 +1,21 @@
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  margin-top: 1em;
+
+
+  h2 {
+    text-align: center;
+  }
+
+  ul {
+    border: 1px solid black;
+
+    li {
+      @include iconStyling;
+    }
+  }
+
+}

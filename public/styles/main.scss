@@ -2,6 +2,8 @@
 @import 'sass/abstracts/_icons.scss';
 @import 'sass/abstracts/_mixins.scss';
 @import 'sass/components/_header.scss';
+@import 'sass/components/_skills.scss';
+@import 'sass/components/_projects.scss';
 
 /******************************************
 * Base Styling
@@ -38,47 +40,6 @@ body {
     //margin-left: 3em;
   }
 }
-
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  
-
-  margin-top: 1em;
-
-
-  h2 {
-    text-align: center;
-  }
-
-  ul {
-    border: 1px solid black;
-
-    li {
-      @include iconStyling;
-    }
-  }
-
-}
-
-.projects {
-  .project-container {
-    img {
-      width: 100%;
-    }
-  }
-  a {
-    color: black;
-  }
-}
-
-/*******************************************/
-
-
-
-
 
 
 
@@ -129,12 +90,14 @@ body {
     
   }
 
+  
+
   .about-me {
    
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
 
     .story {
       margin: 0 1.5em;
