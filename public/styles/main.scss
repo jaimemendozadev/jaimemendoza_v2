@@ -21,40 +21,9 @@ body {
   margin: 0;
 }
 
-/*******************************************/
 
 
 
-
-
-
-/*
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
- 
-
-  .title {
-    margin-left: 1em;
-  }
-
-  .menu {
-    //margin-right: 2em;
-    a {
-      //text-decoration: none;
-      display: inline-block;
-      color: black;
-
-      margin: 0 1em;
-  
-      //margin-left: 3em;
-    }
-  }
-  
-}
-*/
 
 
 
@@ -95,10 +64,20 @@ nav {
 }
 
 .projects {
+  .project-container {
+    img {
+      width: 100%;
+    }
+  }
   a {
     color: black;
   }
 }
+
+/*******************************************/
+
+
+
 
 
 
@@ -183,12 +162,41 @@ nav {
     .project-container {
       width: 80%;
       margin: 4em auto 0 auto;
-
-      img {
-        width: 100%;
-      }
     }
 
+  }
+
+}
+
+
+/******************************************
+* Tablet + Desktop Layout
+*******************************************/
+
+@media only screen and (min-width: 401px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  
+    .title {
+      margin-left: 1em;
+    }
+  
+    .menu {
+      //margin-right: 2em;
+      a {
+        //text-decoration: none;
+        display: inline-block;
+        color: black;
+  
+        margin: 0 1em;
+    
+        //margin-left: 3em;
+      }
+    }
+    
   }
 
 }
