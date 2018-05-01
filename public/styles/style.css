@@ -31,6 +31,7 @@ li[data-skill="React"] {
 li[data-skill="React Native"] {
   background-image: url("../images/logos/react-logo.svg");
   padding-left: 2em;
+  white-space: nowrap;
   background-position: left center; }
 
 li[data-skill="Redux"] {
@@ -208,15 +209,14 @@ a {
   nav {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
-    nav .title {
-      margin-left: 1em; }
+    align-items: center;
+    margin: 0 2em; }
     nav .menu a {
       display: inline-block;
       margin: 0 1em; }
   .about-me {
     display: flex;
-    margin: 2em 1em; }
+    margin: 2em 2em; }
     .about-me .about-me-header {
       width: 30%; }
     .about-me .story {
@@ -242,7 +242,7 @@ a {
       width: 80%;
       margin: 4em auto 0 auto; }
       .projects .project-container .project-description {
-        margin-left: 1em;
+        margin-right: 1em;
         width: 30%; }
       .projects .project-container .img-container {
         width: 70%; }
