@@ -28,7 +28,6 @@ body {
   flex-wrap: wrap;
 }
 
-
 a {
   color: $link-color;
 }
@@ -127,8 +126,6 @@ a {
   .projects {
     margin-top: 2em;
 
- 
-
     .project-container {
       width: 80%;
       margin: 4em auto 0 auto;
@@ -171,6 +168,22 @@ a {
     
   }
 
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+
+
+    h2 {
+      width: 100%;
+    }
+
+    ul {
+      width: 20%;
+    }
+  }
+
   .projects {
     margin-top: 2em;
 
@@ -182,9 +195,5 @@ a {
         width: 100%;
       }
     }
-
   }
-
-
-
 }

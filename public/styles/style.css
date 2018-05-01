@@ -152,7 +152,7 @@ body {
   flex-wrap: wrap; }
 
 a {
-  color: black; }
+  color: #000000; }
 
 /******************************************
 * Mobile Layout
@@ -216,6 +216,15 @@ a {
     nav .menu a {
       display: inline-block;
       margin: 0 1em; }
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto; }
+    .skills h2 {
+      width: 100%; }
+    .skills ul {
+      width: 20%; }
   .projects {
     margin-top: 2em; }
     .projects .project-container {
