@@ -214,6 +214,13 @@ a {
     nav .menu a {
       display: inline-block;
       margin: 0 1em; }
+  .about-me {
+    display: flex;
+    margin: 2em 1em; }
+    .about-me .about-me-header {
+      width: 30%; }
+    .about-me .story {
+      width: 70%; }
   .skills {
     display: flex;
     flex-wrap: wrap;
@@ -224,9 +231,20 @@ a {
     .skills ul {
       width: 20%; }
   .projects {
-    margin-top: 2em; }
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+    .projects h2 {
+      margin: 2em auto 0 auto; }
     .projects .project-container {
+      display: flex;
       width: 80%;
       margin: 4em auto 0 auto; }
-      .projects .project-container img {
-        width: 100%; } }
+      .projects .project-container .project-description {
+        margin-left: 1em;
+        width: 30%; }
+      .projects .project-container .img-container {
+        width: 70%; }
+        .projects .project-container .img-container img {
+          width: 100%; } }
