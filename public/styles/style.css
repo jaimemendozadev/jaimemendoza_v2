@@ -133,12 +133,6 @@ header {
       background-repeat: no-repeat;
       margin: 1em 0; }
 
-.projects .project-container img {
-  width: 100%; }
-
-.projects a {
-  color: black; }
-
 /******************************************
 * Base Styling
 *******************************************/
@@ -152,6 +146,13 @@ body {
   box-sizing: border-box;
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   margin: 0; }
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap; }
+
+a {
+  color: black; }
 
 /******************************************
 * Mobile Layout
@@ -173,7 +174,6 @@ body {
       display: none; }
     nav .menu a {
       display: inline-block;
-      color: black;
       margin-right: 1em; }
   .main-content {
     width: 90%;
@@ -197,16 +197,16 @@ body {
       border: none; }
   .projects {
     margin-top: 2em; }
-    .projects h2 {
-      text-align: center; }
     .projects .project-container {
       width: 80%;
-      margin: 4em auto 0 auto; } }
+      margin: 4em auto 0 auto; }
+      .projects .project-container img {
+        width: 100%; } }
 
 /******************************************
-* Tablet + Desktop Layout
+* Tablet Layout
 *******************************************/
-@media only screen and (min-width: 401px) {
+@media only screen and (min-width: 401px) and (max-width: 960px) {
   nav {
     display: flex;
     justify-content: space-between;
@@ -215,5 +215,11 @@ body {
       margin-left: 1em; }
     nav .menu a {
       display: inline-block;
-      color: black;
-      margin: 0 1em; } }
+      margin: 0 1em; }
+  .projects {
+    margin-top: 2em; }
+    .projects .project-container {
+      width: 80%;
+      margin: 4em auto 0 auto; }
+      .projects .project-container img {
+        width: 100%; } }

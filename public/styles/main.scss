@@ -3,7 +3,7 @@
 @import 'sass/abstracts/_mixins.scss';
 @import 'sass/components/_header.scss';
 @import 'sass/components/_skills.scss';
-@import 'sass/components/_projects.scss';
+
 
 /******************************************
 * Base Styling
@@ -23,9 +23,15 @@ body {
   margin: 0;
 }
 
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 
-
+a {
+  color: $link-color;
+}
 
 
 
@@ -76,9 +82,7 @@ body {
 
       a {
         display: inline-block;
-        color: black;
-        margin-right: 1em;
-        
+        margin-right: 1em;        
       }
     }
   }
@@ -90,8 +94,6 @@ body {
 
     
   }
-
-  
 
   .about-me {
     margin-top: 2em;
@@ -125,13 +127,15 @@ body {
   .projects {
     margin-top: 2em;
 
-    h2 {
-      text-align: center;
-    }
+ 
 
     .project-container {
       width: 80%;
       margin: 4em auto 0 auto;
+
+      img {
+        width: 100%;
+      }
     }
 
   }
@@ -140,10 +144,10 @@ body {
 
 
 /******************************************
-* Tablet + Desktop Layout
+* Tablet Layout
 *******************************************/
 
-@media only screen and (min-width: 401px) {
+@media only screen and (min-width: 401px) and (max-width: 960px) {
   nav {
     display: flex;
     justify-content: space-between;
@@ -158,9 +162,7 @@ body {
       //margin-right: 2em;
       a {
         //text-decoration: none;
-        display: inline-block;
-        color: black;
-  
+        display: inline-block;  
         margin: 0 1em;
     
         //margin-left: 3em;
@@ -168,5 +170,21 @@ body {
     }
     
   }
+
+  .projects {
+    margin-top: 2em;
+
+    .project-container {
+      width: 80%;
+      margin: 4em auto 0 auto;
+
+      img {
+        width: 100%;
+      }
+    }
+
+  }
+
+
 
 }
