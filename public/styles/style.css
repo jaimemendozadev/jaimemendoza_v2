@@ -193,8 +193,6 @@ a {
     justify-content: flex-start; }
     .skills h2 {
       width: 100%; }
-    .skills ul {
-      border: none; }
   .projects {
     margin-top: 2em; }
     .projects .project-container {

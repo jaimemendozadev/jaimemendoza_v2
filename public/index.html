@@ -7,21 +7,20 @@
     <title>Jaime Mendoza | Software Engineer</title>
     <meta name="description" content="Software Engineer focused on delivering solutions to difficult problems in a timely manner.">
     <link rel="stylesheet" href="styles/style.css">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement("picture");
+    </script>
+    <script src="scripts/picturefill.min.js" async></script>
 
 </head>
 <body>
-
-
-
-  
   <div class="page">
-
     <nav>
       <div class="domain-header">
         <h1 class="title">JaimeMendoza.com</h1>
       </div>
       
-
       <div class="menu">
         <a href="#mad-skills">Skills</a>
         <a href="#featured-projects">Featured Projects</a>
@@ -30,14 +29,11 @@
 
     </nav>
 
-
-
     <header>
       <div class="logo">
         <div class="jm">JM</div>
       </div>
       
-
       <div class="header-text">
         <h1>Jaime Mendoza</h1>
         <h3>Software Engineer focused on delivering solutions to difficult problems in a timely manner.</h3>
@@ -45,15 +41,12 @@
       </div>
     </header>
 
-
-
     <div class="main-content">
       <div class="about-me">
         <div class="about-me-header">
           <h2>A little about me:</h2>  
         </div>
         
-  
         <div class="story">
           <p>The reality is that coding has always been in my DNA. I still remember coding simple HTML 3.x spec pages for my high school website. And ever since then, coding has never left me.</p>
           
@@ -63,8 +56,6 @@
         </div>
       </div>
     
-
-
       <div ID="mad-skills" class="skills">
         <h2>Mad Skills</h2>
         <ul class="languages">
@@ -105,10 +96,13 @@
         <div class="project-container homemade">
           <h2 ID="featured-projects">Featured Projects</h2>
 
-          <div class="img-container">
-            <img src="images/projects/homemade-medium.png" alt="Homemade Project Screenshot">
-          </div>
-          
+          <picture class="img-container">
+            <source srcset="images/projects/homemade-small.png" media="(max-width:400px)">
+            <source srcset="images/projects/homemade-medium.png" media="(max-width:960px)">
+            <!-- <source srcset="" media="(min-width: 961px)"> -->
+            <img src="images/projects/homemade-medium.png" alt="Homemade ProjectScreenshot">
+          </picture>
+
           <div class="project-description">
             <h3><a href="https://github.com/home-made/App"   target="_blank">Homemade</a></h3>
             <p>A mobile app that helps people discover new foods from talented   neighborhood home chefs!</p>
@@ -116,20 +110,30 @@
         </div>
   
         <div class="project-container snyppr">
-          <div class="img-container">
-            <img src="images/projects/snyppr-medium.png" alt="Project Screenshot">
-          </div>
+          <picture class="img-container">
+            <source srcset="images/projects/snyppr-small.png" media="(max-width:400px)">
+            <source srcset="images/projects/snyppr-medium.png" media="(max-width:960px)">
+            <!-- <source srcset="" media="(min-width: 961px)"> -->
+
+            <img src="images/projects/snyppr-medium.png" alt="Snyppr ProjectScreenshot">
+          </picture>
+         
           <div class="project-description">
             <h3><a href="​https://github.com/jaimemendozadev/snippr" target="_blank">Snyppr</a></h3>
             <p>An on demand barber service app. Think Uber for haircuts!</p>
           </div>
         </div>
-  
+
         <div class="project-container readio">
-          <div class="img-container">
-            <img src="images/projects/readio-medium.png" alt="Project Screenshot">
-          </div>
+
+          <picture class="img-container">
+            <source srcset="images/projects/readio-small.png" media="(max-width:400px)">
+            <source srcset="images/projects/readio-medium.png" media="(max-width:960px)">
+            <!-- <source srcset="" media="(min-width: 961px)"> -->
   
+            <img src="images/projects/readio-medium.png" alt="Readio Project Screenshot">
+          </picture>
+      
           <div class="project-description">
             <h3><a href="https://github.com/jaimemendozadev/soundcloud-mvp-ver2"   target="_blank">Read.io</a></h3>
             <p>A personalized music player that helps you find SoundCloud music and lets   you create/save your playlists.</p>
@@ -138,10 +142,6 @@
 
       </div>
     </div>
-
-
-
-
   </div>
     
 </body>
