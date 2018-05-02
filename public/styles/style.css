@@ -120,12 +120,7 @@ header {
     text-align: center; }
 
 .skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   margin-top: 1em; }
-  .skills h2 {
-    text-align: center; }
   .skills ul {
     border: 1px solid black; }
     .skills ul li {
@@ -160,14 +155,13 @@ header {
     margin-top: 2em;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    font-size: 1.2em; }
+    align-items: center; }
     .about-me .story {
       margin: 0 1.5em; }
   .skills {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; }
+    justify-content: center; }
     .skills h2 {
       width: 100%; }
   .projects {
@@ -177,6 +171,13 @@ header {
       margin: 4em auto 0 auto; }
       .projects .project-container img {
         width: 100%; } }
+
+@media only screen and (min-width: 401px) and (max-width: 795px) {
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 2em;
+    align-items: center; } }
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   nav {
@@ -193,16 +194,22 @@ header {
     .about-me .about-me-header {
       width: 30%; }
     .about-me .story {
-      width: 70%; }
+      width: 70%;
+      margin-left: 1em; }
   .skills {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 auto; }
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 3em; }
     .skills h2 {
-      width: 100%; }
-    .skills ul {
-      width: 20%; }
+      width: 100%;
+      text-align: center; }
+    .skills .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .skills .skills-container ul {
+        width: 40%; }
   .projects {
     margin-top: 2em;
     display: flex;
@@ -231,6 +238,25 @@ header {
     nav .menu a {
       display: inline-block;
       margin: 0 1em; }
+  .main-content {
+    width: 90%;
+    margin: 0 auto; }
+  .about-me {
+    display: flex; }
+    .about-me .about-me-header {
+      width: 30%; }
+    .about-me .story {
+      width: 70%; }
+  .skills {
+    display: flex; }
+    .skills .skills-header {
+      width: 30%; }
+    .skills .skills-container {
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap; }
+      .skills .skills-container ul {
+        width: 30%; }
   .project-container {
     display: flex; }
     .project-container .project-description {
@@ -256,7 +282,8 @@ body {
 
 .main-content {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  font-size: 1.5em; }
 
 a {
   color: #000000; }
