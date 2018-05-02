@@ -1,11 +1,5 @@
 @media only screen and (max-width: 400px) {
 
-  .page {
-    display: flex;
-    flex-direction: column;
-
-  }
-
   .nav-header-container {
     display: flex;
     flex-wrap: wrap;
@@ -18,9 +12,10 @@
     nav {
       order: 2;
       font-size: 1.2em;
+
       display: flex;
       justify-content: center;
-      margin-top: 2em;
+      margin: 2em auto 0 auto;
       
   
       .domain-header {
@@ -28,9 +23,11 @@
       }
   
       .menu {
+        display: flex;
         
+       
         a {
-          display: inline-block;
+          display: block;
           margin: 0 1em;      
         }
       }
@@ -42,7 +39,6 @@
 
   .main-content {
     width: 90%;
-    order: 3;
     margin: 0 auto;
   }
 

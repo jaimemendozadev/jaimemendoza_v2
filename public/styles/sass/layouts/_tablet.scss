@@ -3,21 +3,6 @@
 *******************************************/
 @media only screen and (min-width: 401px) and (max-width: 960px) {
 
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 2em;
-  
-    .menu {
-      a {
-        display: inline-block;  
-        margin: 0 1em;
-      }
-    }
-  }
-
   .about-me {
     display: flex;
     margin: 2em 2em;
@@ -69,40 +54,69 @@
 * Nav/Header Tablet Query Styling
 *******************************************/
 
+//Menu Section continues appearing below Header until 654px break point
 @media only screen and (min-width: 401px) and (max-width: 654px) {
 
   .nav-header-container {
     display: flex;
     flex-wrap: wrap;
+    
 
     header {
       order: 1;
-      margin-top: 0;
+      margin: 0;
     }
-
-    
+  
     nav {
       order: 2;
       font-size: 1.2em;
+      
+
       display: flex;
       justify-content: center;
-      margin-top: 2em;
-      
+      margin: 2em auto 0 auto;
   
       .domain-header {
         display: none;
       }
   
       .menu {
-        
+        display: flex;
+      
+       
         a {
-          display: inline-block;
-          margin-right: .5em;        
+          display: block;
+          margin: 0 1em;      
         }
+      }
+    }
+  
+  }
+}
+
+
+//Domain Header and Menu appear above Header as browser resizes to Desktop
+@media only screen and (min-width: 655px) and (max-width: 960px) {
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2em;
+  
+    .menu {
+      a {
+        display: inline-block;  
+        margin: 0 1em;
       }
     }
   }
 }
+
+
+
+
+
 
 
 
