@@ -230,7 +230,15 @@ header {
     margin: 0 2em; }
     nav .menu a {
       display: inline-block;
-      margin: 0 1em; } }
+      margin: 0 1em; }
+  .project-container {
+    display: flex; }
+    .project-container .project-description {
+      width: 30%; }
+    .project-container .img-container {
+      width: 70%; }
+    .project-container img {
+      width: 70%; } }
 
 /******************************************
 * Base Styling
