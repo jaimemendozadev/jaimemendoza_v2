@@ -309,6 +309,9 @@ header {
     .about-me .story {
       margin-left: 1em;
       width: 70%; }
+  .skills h2 {
+    width: 100%;
+    text-align: center; }
   .project-container {
     display: flex; }
     .project-container .project-description {
@@ -327,9 +330,6 @@ header {
     flex-direction: column;
     justify-content: center;
     margin: 0 2em; }
-    .skills h2 {
-      width: 100%;
-      text-align: center; }
     .skills .skills-container {
       display: flex;
       flex-wrap: wrap;
