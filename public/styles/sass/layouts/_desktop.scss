@@ -58,12 +58,35 @@
     }
   }
 
+
+
   .footer-container {
-    .gmail,
-    .github,
-    .linkedin {
-      height: 2em;
-      width: 2em;
+    margin-top: 20vh;
+
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .gmail,
+      .github,
+      .linkedin {
+        height: 2em;
+        width: 2em;
+      }
+
+      .contact-header {
+        text-align: center;
+        width: 40%;
+      }
+  
+      .contact-conainer {
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        
+        margin-right: 3em;
+      }
     }
   }
 
