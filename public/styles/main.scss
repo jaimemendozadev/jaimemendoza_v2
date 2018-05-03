@@ -2,7 +2,6 @@
 @import 'sass/abstracts/_icons.scss';
 @import 'sass/abstracts/_mixins.scss';
 @import 'sass/components/_header.scss';
-@import 'sass/components/_skills.scss';
 @import 'sass/layouts/_mobile.scss';
 @import 'sass/layouts/_tablet.scss';
 @import 'sass/layouts/_desktop.scss';
@@ -25,10 +24,24 @@ body {
   margin: 0;
 }
 
+a {
+  color: $link-color;
+}
+
 .main-content {
   font-size: 1.5em;
 }
 
-a {
-  color: $link-color;
+.skills {
+    
+  margin-top: 1em;
+
+  ul {
+    
+    li {
+      @include iconStyling;
+    }
+  }
+
 }
+

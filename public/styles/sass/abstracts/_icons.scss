@@ -77,7 +77,8 @@ li[data-skill="JavaScript"] {
   }
   
   li[data-skill="MySQL"] {
-    background-image: url('../images/logos/mysql-logo.svg');
+    background-image: url('../images/logos/mysql-logo.png');
+    background-size: 30px 20px;
     padding-left: $icon-padding;
     background-position: left center;
   
