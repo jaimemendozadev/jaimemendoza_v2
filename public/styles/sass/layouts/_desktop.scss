@@ -7,6 +7,7 @@
     margin: 0 2em;
   
     .menu {
+      font-size: 1.5em;
       a {
         display: inline-block;  
         margin: 0 1em;
@@ -19,19 +20,89 @@
     margin: 0 auto;
   }
 
+
+
   .about-me {
     display: flex;
+    margin: 2em 2em;
 
     .about-me-header{
       width: 30%;
     }
     .story {
+      margin-left: 1em;
       width: 70%;
     }
   }
 
+
+
+
+
+  
+
+  .project-container {
+    display: flex;
+
+    .project-description {
+      width: 30%;
+    }
+
+    .img-container {
+      width: 70%; 
+    }
+
+    img {
+      width: 70%; //if img width == 100%, layout breaks
+    }
+  }
+
+
+
+}
+
+
+
+
+
+
+/******************************************
+* Skills Desktop Query Styling
+*******************************************/
+
+
+@media only screen and (min-width: 961px) and (max-width: 1035px) {
   .skills {
     display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    margin: 0 2em;
+
+
+
+    h2 {
+      width: 100%;
+      text-align: center;
+    }
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      ul {
+        width: 40%;
+      }
+
+    }
+  } 
+}
+
+@media only screen and (min-width: 1036px) {
+  .skills {
+    display: flex;
+    margin: 0 2em;
     
     .skills-header {
       width: 30%;
@@ -49,21 +120,5 @@
     }
 
     
-  }
-
-  .project-container {
-    display: flex;
-
-    .project-description {
-      width: 30%;
-    }
-
-    .img-container {
-      width: 70%; 
-    }
-
-    img {
-      width: 70%; //if img width == 100%, layout breaks
-    }
   }
 }

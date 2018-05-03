@@ -189,7 +189,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 1em; }
+    margin: 0 2em; }
     .skills h2 {
       width: 100%;
       text-align: center; }
@@ -267,7 +267,7 @@ header {
     .project-container img {
       width: 100%; } }
 
-@media only screen and (min-width: 904px) and (max-width: 960px) {
+@media only screen and (min-width: 904px) {
   .projects {
     margin-top: 2em;
     display: flex;
@@ -293,28 +293,22 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 0 2em; }
-    nav .menu a {
-      display: inline-block;
-      margin: 0 1em; }
+    nav .menu {
+      font-size: 1.5em; }
+      nav .menu a {
+        display: inline-block;
+        margin: 0 1em; }
   .main-content {
     width: 90%;
     margin: 0 auto; }
   .about-me {
-    display: flex; }
+    display: flex;
+    margin: 2em 2em; }
     .about-me .about-me-header {
       width: 30%; }
     .about-me .story {
+      margin-left: 1em;
       width: 70%; }
-  .skills {
-    display: flex; }
-    .skills .skills-header {
-      width: 30%; }
-    .skills .skills-container {
-      width: 70%;
-      display: flex;
-      flex-wrap: wrap; }
-      .skills .skills-container ul {
-        width: 30%; }
   .project-container {
     display: flex; }
     .project-container .project-description {
@@ -323,6 +317,38 @@ header {
       width: 70%; }
     .project-container img {
       width: 70%; } }
+
+/******************************************
+* Skills Desktop Query Styling
+*******************************************/
+@media only screen and (min-width: 961px) and (max-width: 1035px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 2em; }
+    .skills h2 {
+      width: 100%;
+      text-align: center; }
+    .skills .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .skills .skills-container ul {
+        width: 40%; } }
+
+@media only screen and (min-width: 1036px) {
+  .skills {
+    display: flex;
+    margin: 0 2em; }
+    .skills .skills-header {
+      width: 30%; }
+    .skills .skills-container {
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap; }
+      .skills .skills-container ul {
+        width: 30%; } }
 
 /******************************************
 * Base Styling
@@ -339,8 +365,6 @@ body {
   margin: 0; }
 
 .main-content {
-  display: flex;
-  flex-wrap: wrap;
   font-size: 1.5em; }
 
 a {
