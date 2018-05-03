@@ -116,7 +116,7 @@ header {
       right: 0;
       font-size: 2em; }
   header .header-text {
-    margin-top: 1em;
+    margin: 1em 1em 0 1em;
     text-align: center; }
 
 .skills {
@@ -199,6 +199,14 @@ header {
       justify-content: center; }
       .skills .skills-container ul {
         width: 40%; } }
+
+@media only screen and (min-width: 401px) and (max-width: 870px) {
+  .menu {
+    font-size: 1em; } }
+
+@media only screen and (min-width: 871px) and (max-width: 960px) {
+  .menu {
+    font-size: 1.3em; } }
 
 /******************************************
 * Nav/Header Tablet Query Styling
