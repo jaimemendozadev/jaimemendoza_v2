@@ -39,18 +39,11 @@
       ul {
         width: 40%;
       }
-
     }
   }  
 
-  .footer-container {
-    .gmail,
-    .github,
-    .linkedin {
-      height: 1.7em;
-      width: 1.7em;
-    }
-  }
+
+  
 }
 
 @media only screen and (min-width: 401px) and (max-width: 870px) {
@@ -107,8 +100,28 @@
         }
       }
     }
-  
   }
+
+  .footer-container {
+    margin-top: 20vh;
+    
+    .gmail,
+    .github,
+    .linkedin {
+      height: 1.7em;
+      width: 1.7em;
+    }
+
+    .contact-header {
+      text-align: center;
+    }
+
+    .contact-conainer {
+      display: flex;
+      justify-content: space-around;  
+    }
+  }
+
 }
 
 
@@ -126,6 +139,36 @@
       a {
         display: inline-block;  
         margin: 0 1em;
+      }
+    }
+  }
+
+  .footer-container {
+    margin-top: 20vh;
+
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .gmail,
+      .github,
+      .linkedin {
+        height: 1.7em;
+        width: 1.7em;
+      }
+
+      .contact-header {
+        text-align: center;
+        width: 40%;
+      }
+  
+      .contact-conainer {
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        
+        margin-right: 3em;
       }
     }
   }
