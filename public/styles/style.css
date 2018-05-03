@@ -267,7 +267,7 @@ header {
     .project-container img {
       width: 100%; } }
 
-@media only screen and (min-width: 904px) {
+@media only screen and (min-width: 904px) and (max-width: 960px) {
   .projects {
     margin-top: 2em;
     display: flex;
@@ -349,6 +349,28 @@ header {
       flex-wrap: wrap; }
       .skills .skills-container ul {
         width: 30%; } }
+
+/******************************************
+* Projects Desktop Query Styling
+*******************************************/
+@media only screen and (min-width: 961px) {
+  .projects {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column; }
+    .projects h2 {
+      margin: 2em auto 0 auto; }
+    .projects .project-container {
+      display: flex;
+      width: 80%;
+      margin: 4em auto 0 auto; }
+      .projects .project-container .project-description {
+        margin-right: 1em;
+        width: 30%; }
+      .projects .project-container .img-container {
+        width: 70%; }
+        .projects .project-container .img-container img {
+          width: 100%; } }
 
 /******************************************
 * Base Styling
