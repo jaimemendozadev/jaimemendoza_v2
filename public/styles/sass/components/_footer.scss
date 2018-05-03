@@ -1,8 +1,37 @@
-footer {
-  margin: 4em auto;
+.footer-container {
+  position: relative;
+  margin-top: 17vh;
 
-//   .gmail {
 
-//     @include contactIconStyling;
-//   }
+  footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .contact-header {
+      width: 50%;
+    }
+        
+    .contact-conainer {
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+          
+      .gmail {
+        @include contactIconStyling;
+        background-image: url('../images/logos/gmail.svg');
+      }    
+      .linkedin {
+        @include contactIconStyling;
+        background-image: url('../images/logos/linkedin.svg');
+      }    
+      .github {
+        @include contactIconStyling;
+        background-image: url('../images/logos/github.svg');
+      }
+    }  
+  }    
 }
