@@ -42,6 +42,15 @@
 
     }
   }  
+
+  .footer-container {
+    .gmail,
+    .github,
+    .linkedin {
+      height: 1.7em;
+      width: 1.7em;
+    }
+  }
 }
 
 @media only screen and (min-width: 401px) and (max-width: 870px) {
