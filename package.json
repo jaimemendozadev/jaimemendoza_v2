@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
-    "compile:sass": "node-sass public/styles/main.scss public/styles/style.css -w"
+    "compile:sass": "node-sass public/styles/main.scss public/styles/style.css -w",
+    "compile:sass:production": "node-sass public/styles/main.scss public/styles/style.css -w --output-style compressed"
   },
   "dependencies": {
     "express": "^4.16.3",
