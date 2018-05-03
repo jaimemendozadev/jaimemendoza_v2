@@ -7,7 +7,6 @@
 li[data-skill="JavaScript"] {
     background-image: url('../images/logos/js-logo.svg');
     padding-left: $icon-padding; 
-        
   }
   
   li[data-skill="HTML"] {
@@ -24,7 +23,6 @@ li[data-skill="JavaScript"] {
   li[data-skill="Sass"] {
     background-image: url('../images/logos/sass-logo.svg');
     padding-left: $icon-padding; 
-    background-position: left center;
   }
   
   li[data-skill="SQL"] {
@@ -34,35 +32,29 @@ li[data-skill="JavaScript"] {
   li[data-skill="React"] {
     background-image: url('../images/logos/react-logo.svg');
     padding-left: $icon-padding; 
-    background-position: left center;
   }
   
   li[data-skill="React Native"] {
     background-image: url('../images/logos/react-logo.svg');
     padding-left: $icon-padding;
     white-space: nowrap; //to prevent icon from expanding when text breaks, no fix for IE
-    background-position: left center;
   }
   
   li[data-skill="Redux"] {
     background-image: url('../images/logos/redux-logo.svg');
     padding-left: $icon-padding;
-    background-position: left center;
-  
   }
   
   li[data-skill="Node"] {
     background-image: url('../images/logos/nodejs-logo.svg');
     background-size: 20px 20px;
     padding-left: $icon-padding;
-    background-position: left center;
   }
   
   li[data-skill="Bootstrap"] {
     background-image: url('../images/logos/bootstrap-logo.svg');
     background-size: 20px 20px;
     padding-left: $icon-padding;
-    background-position: left center;
   }
   
   li[data-skill="Express"] {
@@ -73,55 +65,41 @@ li[data-skill="JavaScript"] {
     background-image: url('../images/logos/jQuery-logo.svg');
     background-size: 30px 20px;
     padding-left: $icon-padding;
-    background-position: left center; 
+     
   }
   
   li[data-skill="MySQL"] {
     background-image: url('../images/logos/mysql-logo.png');
     background-size: 30px 20px;
     padding-left: $icon-padding;
-    background-position: left center;
-  
   }
   
   li[data-skill="Sequelize"] {
     background-image: url('../images/logos/sequelize-logo.svg');
     background-size: 20px 20px;
     padding-left: $icon-padding;
-    background-position: left center;
-  
   }
   
   li[data-skill="MongoDB"] {
     padding-left: $icon-padding;
-    background-position: left center;
-  
   }
   
   li[data-skill="Mongoose"] {
     padding-left: $icon-padding;
-    background-position: left center;
-  
   }
   
   
   li[data-skill="webpack"] {
     background-image: url('../images/logos/webpack-logo.svg');
     padding-left: $icon-padding;
-    background-position: left center;
-  
   }
   
   li[data-skill="Git"] {
     padding-left: $icon-padding;
-    background-position: left center;
-  
   }
   
   li[data-skill="Heroku"] {
     background-image: url('../images/logos/heroku-logo.svg');
     background-size: 20px 20px;
     padding-left: $icon-padding;
-    background-position: left center;
-  
   }

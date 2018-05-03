@@ -2,6 +2,7 @@
 @import 'sass/abstracts/_icons.scss';
 @import 'sass/abstracts/_mixins.scss';
 @import 'sass/components/_header.scss';
+@import 'sass/components/_footer.scss';
 @import 'sass/layouts/_mobile.scss';
 @import 'sass/layouts/_tablet.scss';
 @import 'sass/layouts/_desktop.scss';
@@ -37,7 +38,7 @@ a {
   margin-top: 1em;
 
   ul {
-        
+
     li {
       @include iconStyling;
     }
