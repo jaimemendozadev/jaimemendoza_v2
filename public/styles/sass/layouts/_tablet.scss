@@ -62,7 +62,7 @@
 
 
 /******************************************
-* Nav/Header Tablet Query Styling
+* Nav/Header & Footer Tablet Query Styling
 *******************************************/
 
 //Menu Section continues appearing below Header until 654px break point
@@ -114,6 +114,7 @@
 
     .contact-header {
       text-align: center;
+      font-size: 1.2em;
     }
 
     .contact-conainer {
@@ -123,6 +124,9 @@
   }
 
 }
+
+
+
 
 
 //Domain Header and Menu appear above Header as browser resizes to Desktop
@@ -150,6 +154,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      margin: 0 auto;
 
       .gmail,
       .github,
@@ -160,6 +165,7 @@
 
       .contact-header {
         text-align: center;
+        font-size: 1.2em;
         width: 40%;
       }
   
