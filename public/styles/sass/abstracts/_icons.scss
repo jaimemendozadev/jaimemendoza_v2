@@ -80,7 +80,7 @@ li[data-skill="JavaScript"] {
     padding-left: $icon-padding;
   }
   
-  li[data-skill="MongoDB"] {
+  li[data-skill="MongoDB"] {  
     padding-left: $icon-padding;
   }
   
@@ -95,11 +95,13 @@ li[data-skill="JavaScript"] {
   }
   
   li[data-skill="Git"] {
+    background-image: url('../images/logos/git-logo.svg');
+    background-size: 40px 40px;
     padding-left: $icon-padding;
   }
   
   li[data-skill="Heroku"] {
     background-image: url('../images/logos/heroku-logo.svg');
-    background-size: 20px 20px;
+    background-size: 30px 30px;
     padding-left: $icon-padding;
   }
