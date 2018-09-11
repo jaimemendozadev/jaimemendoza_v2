@@ -92,6 +92,28 @@ li[data-skill="Heroku"] {
   background-size: 30px 30px;
   padding-left: 2em; }
 
+@keyframes moveDown {
+  0% {
+    transform: translateY(-3000px); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(-3000px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(5000px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
 header {
   height: 400px;
   margin-top: 1em;
@@ -107,7 +129,10 @@ header {
     width: 6rem;
     height: 6rem;
     border: 1px solid #fff;
-    position: relative; }
+    position: relative;
+    animation-name: moveDown;
+    animation-duration: 2s;
+    animation-timing-function: ease-out; }
     header .logo .jm {
       position: absolute;
       bottom: 0;
@@ -116,6 +141,14 @@ header {
   header .header-text {
     margin: 1em 1em 0 1em;
     text-align: center; }
+    header .header-text .header-name {
+      animation-name: moveLeft;
+      animation-duration: 3s;
+      animation-timing-function: ease-in; }
+    header .header-text .header-tagline {
+      animation-name: moveRight;
+      animation-duration: 4s;
+      animation-timing-function: ease-in; }
 
 .footer-container {
   position: relative; }
