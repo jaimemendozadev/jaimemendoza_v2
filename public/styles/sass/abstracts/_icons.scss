@@ -117,3 +117,9 @@ li[data-skill="JavaScript"] {
     background-size: 30px 30px;
     padding-left: $icon-padding;
   }
+
+  li[data-skill="Jest"] {
+    background-image: url('../images/logos/jest-logo.svg');
+    background-size: 30px 30px;
+    padding-left: $icon-padding;
+  }

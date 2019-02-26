@@ -7,7 +7,8 @@
     "dev": "nodemon index.js",
     "start": "node index.js",
     "compile:sass": "node-sass public/styles/main.scss public/styles/style.css -w",
-    "compile:sass:production": "node-sass public/styles/main.scss public/styles/style.css -w --output-style compressed"
+    "compile:sass:production": "node-sass public/styles/main.scss public/styles/style.css -w --output-style compressed",
+    "s3:deploy": "aws s3 cp public/ s3://jaimemendoza.com/ --recursive --profile jmendoza"
   },
   "dependencies": {
     "express": "^4.16.3",
@@ -15,6 +16,7 @@
   },
   "devDependencies": {
     "node-sass": "^4.9.0",
-    "nodemon": "^1.17.3"
+    "nodemon": "^1.17.3",
+    "travis-ci-cloudfront-invalidation": "^1.1.0"
   }
 }

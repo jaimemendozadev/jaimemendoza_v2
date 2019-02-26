@@ -92,15 +92,20 @@ li[data-skill="Heroku"] {
   background-size: 30px 30px;
   padding-left: 2em; }
 
+li[data-skill="Jest"] {
+  background-image: url("../images/logos/jest-logo.svg");
+  background-size: 30px 30px;
+  padding-left: 2em; }
+
 @keyframes moveDown {
   0% {
-    transform: translateY(-3000px); }
+    transform: translateY(-800px); }
   100% {
     transform: translateY(0); } }
 
 @keyframes moveLeft {
   0% {
-    transform: translateX(-3000px);
+    transform: translateX(-1000px);
     opacity: 0; }
   100% {
     transform: translateX(0);
@@ -108,7 +113,7 @@ li[data-skill="Heroku"] {
 
 @keyframes moveRight {
   0% {
-    transform: translateX(5000px);
+    transform: translateX(1000px);
     opacity: 0; }
   100% {
     transform: translateX(0);
