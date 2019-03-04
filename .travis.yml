@@ -5,6 +5,7 @@ cache:
   yarn: true
   directories:
     - node_modules
+script: 'true'
 before_deploy:
   - yarn run compile:sass:production
 deploy:
