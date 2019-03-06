@@ -62,3 +62,6 @@ typings/
 
 # project screenshots
 public/images/projects
+
+# misc files
+.DS_Store
