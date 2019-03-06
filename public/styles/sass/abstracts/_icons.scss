@@ -105,6 +105,25 @@ li[data-skill="JavaScript"] {
     background-image: url('../images/logos/webpack-logo.svg');
     padding-left: $icon-padding;
   }
+
+  li[data-skill="Jest"] {
+    background-image: url('../images/logos/jest-logo.svg');
+    background-size: 30px 30px;
+    padding-left: $icon-padding;
+  }
+
+  li[data-skill="AWS"] {
+    background-image: url('../images/logos/aws-logo.svg');
+    background-size: 43px 45px;
+    padding-left: $icon-padding;
+   
+  }
+
+  li[data-skill="Heroku"] {
+    background-image: url('../images/logos/heroku-logo.svg');
+    background-size: 30px 30px;
+    padding-left: $icon-padding;
+  }
   
   li[data-skill="Git"] {
     background-image: url('../images/logos/git-logo.svg');
@@ -112,14 +131,6 @@ li[data-skill="JavaScript"] {
     padding-left: $icon-padding;
   }
   
-  li[data-skill="Heroku"] {
-    background-image: url('../images/logos/heroku-logo.svg');
-    background-size: 30px 30px;
-    padding-left: $icon-padding;
-  }
+  
 
-  li[data-skill="Jest"] {
-    background-image: url('../images/logos/jest-logo.svg');
-    background-size: 30px 30px;
-    padding-left: $icon-padding;
-  }
+  

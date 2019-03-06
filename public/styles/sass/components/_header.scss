@@ -19,7 +19,7 @@ header {
     position: relative;
 
     animation-name: moveDown;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
   
     .jm {
@@ -38,13 +38,13 @@ header {
 
     .header-name {
       animation-name: moveLeft;
-      animation-duration: 3s;
+      animation-duration: 2s;
       animation-timing-function: ease-in;
     }
   
     .header-tagline {
       animation-name: moveRight;
-      animation-duration: 4s;
+      animation-duration: 2s;
       animation-timing-function: ease-in;
     }
   }
