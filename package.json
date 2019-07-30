@@ -8,7 +8,8 @@
     "start": "node index.js",
     "compile:sass": "node-sass public/styles/main.scss public/styles/style.css -w",
     "compile:sass:production": "node-sass public/styles/main.scss public/styles/style.css -w --output-style compressed",
-    "s3:deploy": "aws s3 cp public/ s3://jaimemendoza.com/ --recursive --profile jmendoza"
+    "s3:deploy": "aws s3 cp public/ s3://jaimemendoza.com/ --recursive --profile jmendoza",
+    "nu:clear": "rm -rfv node_modules && rm -rfv package-lock.json && rm -rfv yarn.lock && yarn install"
   },
   "dependencies": {
     "express": "^4.16.3",
