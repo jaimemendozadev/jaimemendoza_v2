@@ -9,6 +9,12 @@ li[data-skill="JavaScript"] {
   padding-left: $icon-padding; 
 }
 
+li[data-skill="TypeScript"] {
+  background-image: url('../images/logos/typescript-logo.png');
+  background-size: 30px 30px;
+  padding-left: $icon-padding; 
+}
+
 li[data-skill="HTML"] {
   background-image: url('../images/logos/html-logo.svg');
   padding-left: $icon-padding;
