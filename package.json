@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon index.js",
+    "dev:start": "nodemon index.js",
     "start": "node index.js",
     "compile:sass": "node-sass public/styles/main.scss public/styles/style.css -w",
     "compile:sass:production": "node-sass public/styles/main.scss public/styles/style.css -w --output-style compressed",
