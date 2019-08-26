@@ -4,11 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "clear:styles": "rm -rf public/styles/style.css",
     "dev:start": "nodemon index.js",
-    "start": "node index.js",
     "compile:sass": "node-sass public/styles/main.scss public/styles/style.css -w",
-    "compile:sass:production": "node-sass public/styles/main.scss public/styles/style.css -w --output-style compressed",
+    "compile:sass:production": "yarn run clear:styles && node-sass public/styles/main.scss public/styles/style.css -w --output-style compressed",
     "s3:deploy": "aws s3 cp public/ s3://jaimemendoza.com/ --recursive --profile jmendoza",
+    "start": "node index.js",
     "nu:clear": "rm -rfv node_modules && rm -rfv package-lock.json && rm -rfv yarn.lock && yarn install"
   },
   "dependencies": {
