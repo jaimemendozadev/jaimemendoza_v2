@@ -17,7 +17,7 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.13.1",
     "nodemon": "^1.17.3",
     "travis-ci-cloudfront-invalidation": "^1.1.0"
   }
