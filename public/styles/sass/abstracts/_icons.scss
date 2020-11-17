@@ -50,6 +50,19 @@ li[data-skill="React Native"] {
   padding-left: $icon-padding;
   white-space: nowrap; //to prevent icon from expanding when text breaks, no fix for IE
 }
+
+li[data-skill="React Testing Library"] {
+  background-image: url('../images/logos/react-testing-library.png');
+  background-size: 30px 30px;
+  padding-left: $icon-padding;
+}
+
+li[data-skill="Redux Saga"] {
+  background-image: url('../images/logos/redux-saga.svg');
+  background-size: 30px 30px;
+  padding-left: $icon-padding;
+}
+
   
 li[data-skill="Redux"] {
   background-image: url('../images/logos/redux-logo.svg');
@@ -58,7 +71,7 @@ li[data-skill="Redux"] {
 
 li[data-skill="Apollo"] {
   background-image: url('../images/logos/apollo-logo.svg');
-  background-size: 25px 25px;
+  background-size: 30px 30px;
   padding-left: $icon-padding;
 }
 
